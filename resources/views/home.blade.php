@@ -25,16 +25,19 @@
                             <div class="form-group">
                                 <label for="cnpj">CNPJ:</label>
                                 <input  type="text" class="form-control" id="cnpj" name="cnpj"  placeholder="00.000.000/0000-00"
-                                       pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}" autofocus required>
+                                        pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}" autofocus required>
                             </div>
                             <button type="submit" id="pesquisar" class="btn btn-default">Pesquisar</button>
                         </form>
+
 
 
                     </div>
 
                     <div id="menu1" class="tab-pane fade">
                         <h3>Consulta</h3>
+                        <div class="well"></div>
+
 
                     </div>
 

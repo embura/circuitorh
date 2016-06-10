@@ -20,7 +20,7 @@ class AuthController extends Controller {
 
 	use AuthenticatesAndRegistersUsers;
 
-	protected $redirectTo = '/home1';
+	protected $redirectTo = '/sintegra/home/';
 
 
 	/**

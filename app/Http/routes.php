@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/sintegra/home', 'SintegraController@index');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
@@ -24,8 +26,6 @@ Route::controllers([
 
 resource('sintegra', 'SintegraController');
 
-get('sintegra/cnpj/{cnpj}', 'SintegraController@getConsulta');
-
-
-
-
+get('sintegra/cnpj/{cnpj}',	[
+	'as' => 'getConsulta',	'uses' => 'SintegraController@getConsulta'
+]);
